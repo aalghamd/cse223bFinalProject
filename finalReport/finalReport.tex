@@ -55,8 +55,6 @@ Nodes outside the clique may or may not receive messages, receive duplicate mess
 \subsection{The Heartbeat}
 To ensure an individual node has not become completely isolated from the system, it will occasionally send a heartbeat request to a random node in the system along with it’s current vector clock. In the event the other nodes vector clock matches, an okay message is sent. In the event the two clocks don’t match the node with newest clock will send the last message it received which will cause the other node to initiate the algorithm described above.  
 
-\subsection{The Synchronization Protocol}
-(we may remove this part )Synchronization Protocol which will essentially enforce that all nodes, or a subset of nodes, synchronize all of their data before accepting any new client requests. Put another making sure that everyone knows everything that everyone else knows.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -110,9 +108,14 @@ The following part should be removed at the end.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Conclusion }
+conclusion
+
+\section{Future Work}
+\subsection{The Synchronization Protocol}
+Synchronization Protocol which will essentially enforce that all nodes, or a subset of nodes, synchronize all of their data before accepting any new client requests. 
 
 
-%%%%%%%%     figure example
+%%%%%%%% 
 \begin{figure}
 \centering
 \includegraphics[scale=.4]{sys.png}
